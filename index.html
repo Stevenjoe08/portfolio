@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steven Joe Bautista | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Glowing cursor follower -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>SJB<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span>Available for OJT / Internship</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name-line">
+                        <span class="first-name">Steven Joe</span>
+                    </span>
+                    <span class="last-name">Bautista</span>
+                </h1>
+                <div class="hero-role">
+                    <span class="role-prefix">&gt;&gt;</span>
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-description">
+                    A passionate 4th year IT student at Bukidnon State University with hands-on experience in 
+                    networking, system diagnostics, and technical support. Ready to bring energy and dedication 
+                    to real-world IT challenges.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#experience" class="btn btn-outline">
+                        <span>View Experience</span>
+                        <i class="fas fa-briefcase"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Years of Study</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="6">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Core Skills</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="avatar-container">
+                    <div class="avatar-ring"></div>
+                    <div class="avatar-ring ring-2"></div>
+                    <div class="avatar-placeholder">
+                        <img src="assets/images/steven-photo.jpg" alt="Steven Joe Bautista" class="avatar-img">
+                    </div>
+                    <div class="orbit-dot dot-1"></div>
+                    <div class="orbit-dot dot-2"></div>
+                    <div class="orbit-dot dot-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3 class="about-subtitle">
+                        <i class="fas fa-terminal"></i> Who Am I?
+                    </h3>
+                    <p>
+                        I'm <strong>Steven Joe Bautista</strong>, a 4th year Bachelor of Science in Information Technology 
+                        student at <strong>Bukidnon State University</strong>, Malaybalay City, Bukidnon. I'm passionate 
+                        about technology, problem-solving, and building practical IT solutions.
+                    </p>
+                    <p>
+                        Throughout my academic journey, I've developed strong competencies in network configuration, 
+                        hardware diagnostics, technical support, and collaborative system development. I thrive in 
+                        team environments and am always eager to learn new technologies.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-graduation-cap"></i> Degree</span>
+                            <span class="info-value">BS Information Technology</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-university"></i> University</span>
+                            <span class="info-value">Bukidnon State University</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-map-marker-alt"></i> Location</span>
+                            <span class="info-value">Malaybalay City, Bukidnon</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label"><i class="fas fa-briefcase"></i> Status</span>
+                            <span class="info-value">OJT Candidate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="window-title">steven_profile.json</span>
+                        </div>
+                        <div class="window-body">
+                            <pre><code>{
+  <span class="json-key">"name"</span>: <span class="json-value">"Steven Joe Bautista"</span>,
+  <span class="json-key">"role"</span>: <span class="json-value">"IT Student & OJT Candidate"</span>,
+  <span class="json-key">"university"</span>: <span class="json-value">"Bukidnon State University"</span>,
+  <span class="json-key">"year"</span>: <span class="json-number">4</span>,
+  <span class="json-key">"interests"</span>: [
+    <span class="json-value">"Networking"</span>,
+    <span class="json-value">"System Administration"</span>,
+    <span class="json-value">"Technical Support"</span>,
+    <span class="json-value">"Problem Solving"</span>
+  ],
+  <span class="json-key">"available"</span>: <span class="json-bool">true</span>
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="section-tag section-tag-close">&lt;/about&gt;</span>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up">
+                    <div class="skill-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Network Configuration</h3>
+                    <p>Experienced in configuring LANs, network switches, routers, and resolving IP configuration errors and connectivity issues.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Hardware & Systems Diagnostics</h3>
+                    <p>Hands-on experience in hardware maintenance, component diagnostics, OS installation, and software troubleshooting.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Technical & Customer Support</h3>
+                    <p>Skilled in providing end-user assistance, resolving technical queries, and ensuring smooth system operations.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Basic Network Troubleshooting</h3>
+                    <p>Proficient in diagnosing connectivity issues, resolving network bottlenecks, and maintaining stable network performance.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Team Collaboration & Leadership</h3>
+                    <p>Strong team player with leadership experience in academic projects, capable of coordinating tasks and driving results.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Problem-Solving & Critical Thinking</h3>
+                    <p>Analytical mindset with the ability to break down complex technical problems and develop effective solutions.</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88"></div>
+                    </div>
+                </div>
+            </div>
+            <span class="section-tag section-tag-close">&lt;/skills&gt;</span>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Work <span class="highlight">Experience</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">
+                                <i class="fas fa-calendar-alt"></i> 2023 – 2025
+                            </span>
+                            <span class="timeline-badge">Academic</span>
+                        </div>
+                        <h3>Networking & Infrastructure Labs</h3>
+                        <h4><i class="fas fa-building"></i> Bukidnon State University</h4>
+                        <ul>
+                            <li>Configured local area networks (LAN), network switches, and routers during laboratory exercises.</li>
+                            <li>Diagnosed and resolved connectivity issues, IP configuration errors, and network bottlenecks.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">
+                                <i class="fas fa-calendar-alt"></i> 2023 – 2025
+                            </span>
+                            <span class="timeline-badge">Project</span>
+                        </div>
+                        <h3>IT Capstone & System Project</h3>
+                        <h4><i class="fas fa-building"></i> Bukidnon State University</h4>
+                        <ul>
+                            <li>Collaborated with a project team to design, document, and present a functional IT system tailored to user requirements.</li>
+                            <li>Conducted system testing, user feedback collection, and technical troubleshooting to ensure quality standards.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">
+                                <i class="fas fa-calendar-alt"></i> 2023 – 2025
+                            </span>
+                            <span class="timeline-badge">Support</span>
+                        </div>
+                        <h3>Technical Support & System Diagnostics</h3>
+                        <h4><i class="fas fa-building"></i> Bukidnon State University</h4>
+                        <ul>
+                            <li>Provided hands-on technical assistance for operating system installation, software updates, and hardware troubleshooting.</li>
+                            <li>Maintained hardware components and assisted peers in resolving technical system queries.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <span class="section-tag section-tag-close">&lt;/experience&gt;</span>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;education&gt;</span>
+                <h2 class="section-title">My <span class="highlight">Education</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="education-card" data-aos="zoom-in">
+                <div class="edu-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="edu-content">
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <h4><i class="fas fa-university"></i> Bukidnon State University</h4>
+                    <span class="edu-date"><i class="fas fa-calendar-alt"></i> 2023 – 2026 (Expected)</span>
+                    <p>Currently in my 4th year, gaining comprehensive knowledge in IT fundamentals, networking, 
+                    system administration, software development, and capstone project development.</p>
+                </div>
+                <div class="edu-glow"></div>
+            </div>
+            <span class="section-tag section-tag-close">&lt;/education&gt;</span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Feel free to reach out for collaborations, OJT opportunities, or just a friendly hello!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card" data-aos="fade-up">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:2301105311@student.buksu.edu.ph">2301105311@student.buksu.edu.ph</a>
+                        </div>
+                    </div>
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+639362024918">+63 936 202 4918</a>
+                        </div>
+                    </div>
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <span>Malaybalay City, Bukidnon</span>
+                        </div>
+                    </div>
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/steven-joe-bautista-61a045225" target="_blank">Steven Joe Bautista</a>
+                        </div>
+                    </div>
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="contact-icon">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Facebook</h4>
+                            <a href="https://www.facebook.com/stevenj0e" target="_blank">stevenj0e</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Your Name
+                            </label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Your Email
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i> Subject
+                            </label>
+                            <input type="text" id="subject" name="subject" placeholder="OJT Opportunity" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment-alt"></i> Message
+                            </label>
+                            <textarea id="message" name="message" rows="5" placeholder="Hello Steven, I'd like to..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <span class="section-tag section-tag-close">&lt;/contact&gt;</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>SJB<span class="logo-bracket"> /&gt;</span>
+                </div>
+                <p class="footer-text">Designed & Built by Steven Joe Bautista &copy; 2026</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/steven-joe-bautista-61a045225" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.facebook.com/stevenj0e" target="_blank" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="mailto:2301105311@student.buksu.edu.ph" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
